@@ -18,7 +18,7 @@ faces = faceCascade.detectMultiScale(   #detectMultiScale is general function th
     scaleFactor=1.1,                    #compensates for how close the faces are to the camera
     minNeighbors=5,                     #defines how many objects are detected near the current one before it declares the face found
     minSize=(30, 30),                   #gives the size of each window
-    flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+    flags = cv2.CASCADE_SCALE_IMAGE
 )                                       #returns list of faces believed to be found
 
 print("Found {0} faces!".format(len(faces)))
